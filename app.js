@@ -12,7 +12,7 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             timer = duration;
-    }
+        }
     }, 1000);
 }
 
@@ -21,7 +21,7 @@ startTimer.window = function () {
         display = document.querySelector('#time');
     startTimer(twoMinutes, display);
 };
-var answers = ["a","b","c","d" ];
+var answers = ["a", "b", "c", "d"];
 function submitAnswers() {
     var total = 4;
     var score = 0;
@@ -30,19 +30,19 @@ function submitAnswers() {
     var q3 = document.forms["quizForm"]["q3"].value;
     var q4 = document.forms["quizForm"]["q4"].value;
 }
-if (q1 == answers[0]){
-    score ++;
+if (q1 == answers[0]) {
+    score++;
 }
-if (q2 == answers[1]){
-    score ++;
+if (q2 == answers[1]) {
+    score++;
 }
-if (q3 == answers[2]){
-    score ++;
+if (q3 == answers[2]) {
+    score++;
 }
-if (q4 == answers[3]){
-    score ++;
+if (q4 == answers[3]) {
+    score++;
 }
-var results = document.getElementById("results");results.innerHTML;
+var results = document.getElementById("results"); results.innerHTML;
 
 
 
